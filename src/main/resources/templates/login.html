@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/app.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="sign-in-title">
+            <h2 class="title">
+                Sign In
+            </h2>
+            <span>
+                Please enter your email and password to sign in.
+            </span>
+        </div>
+        <form action="" th:action="@{/super_admin}" th:object="${user}" method="POST">
+            <div class="login-form">
+                <input type="text" name="email" placeholder="Email" />
+                <input type="password" name="password" placeholder="Password" />
+            </div>
+            <div class="button-login">
+                <button type="submit" class="btn-login">
+                    Login
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

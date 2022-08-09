@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/app.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <title>Main Function</title>
+</head>
+
+<body>
+    <form th:action="@{/management}" method="POST">
+        <div class="main-function-container">
+            <div class="main-function-header">
+                <div class="main-function-profile">
+                    <div class="profile">
+                        <a>
+                            <img src="images/profile.jpg" alt="" width="80">
+                        </a>
+                    </div>
+                    <div class="username">
+                        <span>Admin</span>
+                    </div>
+                </div>
+                <div class="main-function-logout">
+                    <a href="">
+                        <i class='bx bx-log-in'></i>
+                    </a>
+                </div>
+            </div>
+            <div class="main-function-body">
+                <div class="title">
+                    <h1>Main Function</h1>
+                </div>
+                <div class="icon-function">
+                    <a th:href="@{/managerment.html}" class="link">
+               
+                        <div class="icon">
+                            <img src="images/management.png" alt="" width="170">
+                        </div>
+                        <div class="name">
+                            <span>Management</span>
+                        </div>
+                    </a>
+                    <a href="" class="link">
+                        <div class="icon">
+                            <img src="images/cashier.png" alt="" width="170">
+                        </div>
+                        <div class="name">
+                            <span>Cashier</span>
+                        </div>
+                    </a>
+                    <a href="" class="link">
+                        <div class="icon">
+                            <img src="images/report.png" alt="" width="170">
+                        </div>
+                        <div class="name">
+                            <span>Report</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
